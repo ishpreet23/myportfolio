@@ -1,0 +1,129 @@
+<aside class="hidden md:flex fixed left-0 top-16 h-[calc(100vh-4rem)] w-20 hover:w-64 transition-all duration-500 z-40 bg-surface-container-lowest/90 backdrop-blur-2xl border-r border-outline-variant/20 shadow-2xl flex-col overflow-visible group">
+
+    <!-- ================================================= -->
+    <!-- Logo / Profile -->
+    <!-- ================================================= -->
+
+    <div class="relative h-24 group-hover:h-60 transition-all duration-500 border-b border-outline-variant/10 overflow-hidden">
+
+        <!-- Expanded Profile -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 pt-6">
+
+            <!-- Avatar -->
+            <div class="w-20 h-20 rounded-full overflow-hidden border border-outline-variant shadow-lg flex-shrink-0">
+
+                <img
+                    src="/images/my photo.png"
+                    class="w-full h-full object-cover"
+                    alt="Ishpreet Singh">
+
+            </div>
+
+            <!-- Name -->
+            <h3 class="mt-4 text-[18px] font-bold text-secondary tracking-tight text-center whitespace-nowrap">
+                ISHPREET SINGH
+            </h3>
+
+            <!-- Subtitle -->
+            <p class="mt-2 font-mono-data text-[10px] uppercase tracking-[0.35em] text-outline text-center whitespace-nowrap">
+                MOTION • VIDEO • DESIGN
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Navigation -->
+    <!-- ================================================= -->
+
+    <nav class="flex flex-col gap-6 px-4 py-8 flex-1">
+
+        <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/work' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
+            href="/work">
+
+            <span class="material-symbols-outlined"
+                style="<%= path === '/work' ? "font-variation-settings:'FILL' 1;" : "" %>">
+                grid_view
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Gallery
+            </span>
+
+        </a>
+
+        <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/expertise' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
+            href="/expertise">
+
+            <span class="material-symbols-outlined"
+                style="<%= path === '/expertise' ? "font-variation-settings:'FILL' 1;" : "" %>">
+                architecture
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Tools
+            </span>
+
+        </a>
+
+        <a class="flex items-center gap-4 p-3 rounded-lg text-outline hover:text-secondary hover:translate-x-1 transition-all"
+            href="/#timeline">
+
+            <span class="material-symbols-outlined">
+                schedule
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Timeline
+            </span>
+
+        </a>
+
+        <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/contact' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
+            href="/contact">
+
+            <span class="material-symbols-outlined"
+                style="<%= path === '/contact' ? "font-variation-settings:'FILL' 1;" : "" %>">
+                mail
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-bold">
+                Contact
+            </span>
+
+        </a>
+
+    </nav>
+
+    <!-- ================================================= -->
+    <!-- Footer -->
+    <!-- ================================================= -->
+
+    <div class="border-t border-outline-variant/10 p-4">
+
+        <a href="/contact"
+            class="flex items-center gap-4 text-outline hover:text-secondary transition-all">
+
+            <span class="material-symbols-outlined text-secondary animate-pulse"
+                style="font-variation-settings:'FILL' 1;">
+                sensors
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Online Status
+            </span>
+
+        </a>
+
+        <a href="/contact"
+            class="mt-4 hidden group-hover:flex items-center justify-center w-full py-3 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-mono-data font-bold transition-all">
+
+            LET'S SYNC
+
+        </a>
+
+    </div>
+
+</aside>

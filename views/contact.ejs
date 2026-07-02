@@ -1,0 +1,337 @@
+<div class="max-w-container-max mx-auto h-full flex flex-col lg:flex-row gap-12 items-center px-6 md:px-margin-desktop py-12">
+    <!-- HERO TEXT SECTION -->
+    <section class="w-full lg:w-1/2 space-y-8 animate-reveal hero-reveal">
+        <div class="inline-flex items-center gap-3 bg-surface-container-high/50 border border-outline-variant/20 px-4 py-1.5 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-secondary-fixed status-pulse"></span>
+            <span class="font-mono-data text-[10px] tracking-widest text-secondary uppercase">System Status: Ready for Work</span>
+        </div>
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-none">
+            ESTABLISH <br/>
+            <span class="text-secondary-fixed">COMMUNICATION</span>
+        </h1>
+        <p class="font-body-lg text-outline max-w-lg">
+            Currently taking on select projects. Whether it's a high-stakes motion piece or a full technical UI overhaul, let’s build the future together.
+        </p>
+       <!-- <div class="flex gap-6 pt-4">
+            <a class="group relative w-12 h-12 flex items-center justify-center glass-card hover:border-secondary-fixed transition-all duration-500" href="#">
+                <span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors">brand_awareness</span>
+                <div class="absolute inset-0 bg-secondary-fixed/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+            <a class="group relative w-12 h-12 flex items-center justify-center glass-card hover:border-secondary-fixed transition-all duration-500" href="#">
+                <span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors">camera</span>
+                <div class="absolute inset-0 bg-secondary-fixed/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+            <a class="group relative w-12 h-12 flex items-center justify-center glass-card hover:border-secondary-fixed transition-all duration-500" href="#">
+                <span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors">group</span>
+                <div class="absolute inset-0 bg-secondary-fixed/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+            <a class="group relative w-12 h-12 flex items-center justify-center glass-card hover:border-secondary-fixed transition-all duration-500" href="#">
+                <span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors">draw</span>
+                <div class="absolute inset-0 bg-secondary-fixed/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+        </div>-->
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="w-full lg:w-1/2 flex justify-center lg:justify-end animate-reveal bento-reveal">
+        <div class="glass-card w-full max-w-lg p-8 md:p-12 relative overflow-hidden group">
+            <!-- Decorative Crosshairs -->
+            <div class="absolute top-0 left-0 p-2 text-outline-variant/50"><span class="material-symbols-outlined text-[14px]">add</span></div>
+            <div class="absolute top-0 right-0 p-2 text-outline-variant/50"><span class="material-symbols-outlined text-[14px]">add</span></div>
+            <div class="absolute bottom-0 left-0 p-2 text-outline-variant/50"><span class="material-symbols-outlined text-[14px]">add</span></div>
+            <div class="absolute bottom-0 right-0 p-2 text-outline-variant/50"><span class="material-symbols-outlined text-[14px]">add</span></div>
+            
+           <form class="space-y-6 relative z-10" id="contact-form">
+
+    <!-- Full Name -->
+    <div class="space-y-2 group/field">
+        <label class="font-mono-data text-[10px] text-outline uppercase tracking-widest group-focus-within/field:text-secondary-fixed transition-colors">
+            Full Identity
+        </label>
+
+        <div class="neon-border-focus transition-all duration-300">
+            <input
+                id="name"
+                required
+                type="text"
+                placeholder="YOUR NAME / COMPANY"
+                class="w-full bg-white/5 border border-outline-variant/30 px-4 py-3 font-body-md text-secondary placeholder:text-outline-variant/50 focus:outline-none transition-all">
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="space-y-2 group/field">
+        <label class="font-mono-data text-[10px] text-outline uppercase tracking-widest group-focus-within/field:text-secondary-fixed transition-colors">
+            Digital Address
+        </label>
+
+        <div class="neon-border-focus transition-all duration-300">
+            <input
+                id="email"
+                required
+                type="email"
+                placeholder="HELLO@YOURSITE.COM"
+                class="w-full bg-white/5 border border-outline-variant/30 px-4 py-3 font-body-md text-secondary placeholder:text-outline-variant/50 focus:outline-none transition-all">
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="space-y-2 group/field">
+        <label class="font-mono-data text-[10px] text-outline uppercase tracking-widest group-focus-within/field:text-secondary-fixed transition-colors">
+            Contact Number
+        </label>
+
+        <div class="neon-border-focus transition-all duration-300">
+            <input
+                id="phone"
+                required
+                type="tel"
+                placeholder="+91 98765 43210"
+                class="w-full bg-white/5 border border-outline-variant/30 px-4 py-3 font-body-md text-secondary placeholder:text-outline-variant/50 focus:outline-none transition-all">
+        </div>
+    </div>
+
+    <!-- Budget -->
+  <div class="space-y-2 group/field">
+    <label class="font-mono-data text-[10px] text-outline uppercase tracking-widest group-focus-within/field:text-secondary-fixed transition-colors">
+        Estimated Budget
+    </label>
+
+    <div class="relative neon-border-focus">
+
+        <select
+            id="budget"
+            required
+            class="appearance-none w-full
+            bg-[#17181d]
+            text-white
+            border border-lime-400/30
+            hover:border-lime-400
+            focus:border-lime-400
+            rounded-none
+            px-4
+            py-3
+            pr-12
+            font-body-md
+            outline-none
+            transition-all
+            shadow-[0_0_15px_rgba(195,244,0,.08)]">
+
+            <option value="" class="bg-[#17181d] text-white">
+                SELECT PROJECT BUDGET
+            </option>
+
+            <option class="bg-[#17181d] text-white">
+                Under ₹10,000
+            </option>
+
+            <option class="bg-[#17181d] text-white">
+                ₹10,000 – ₹25,000
+            </option>
+
+            <option class="bg-[#17181d] text-white">
+                ₹25,000 – ₹50,000
+            </option>
+
+            <option class="bg-[#17181d] text-white">
+                ₹50,000 – ₹1,00,000
+            </option>
+
+            <option class="bg-[#17181d] text-white">
+                ₹1,00,000+
+            </option>
+
+        </select>
+
+        <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-secondary-fixed">
+            expand_more
+        </span>
+
+    </div>
+</div>
+
+    <!-- Project -->
+    <div class="space-y-2 group/field">
+        <label class="font-mono-data text-[10px] text-outline uppercase tracking-widest group-focus-within/field:text-secondary-fixed transition-colors">
+            Mission Brief
+        </label>
+
+        <div class="neon-border-focus transition-all duration-300">
+            <textarea
+                id="project"
+                required
+                rows="4"
+                placeholder="DESCRIBE THE PROJECT SCOPE..."
+                class="w-full bg-white/5 border border-outline-variant/30 px-4 py-3 font-body-md text-secondary placeholder:text-outline-variant/50 focus:outline-none transition-all resize-none"></textarea>
+        </div>
+    </div>
+
+    <!-- Submit -->
+    <button
+        class="w-full bg-secondary-fixed py-4 font-label-caps text-label-caps text-on-secondary-fixed flex items-center justify-center gap-3 group/btn relative overflow-hidden transition-all active:scale-[0.98] btn-particles shadow-[0_0_20px_rgba(195,244,0,0.2)] hover:shadow-[0_0_40px_rgba(195,244,0,0.4)]"
+        type="submit">
+
+        <span class="relative z-10">
+            INITIATE CONNECTION
+        </span>
+
+        <span class="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform">
+            arrow_right_alt
+        </span>
+
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+
+    </button>
+
+</form>
+            
+            <div class="mt-8 pt-8 border-t border-outline-variant/20 flex justify-between items-center">
+                <div class="font-mono-data text-[10px] text-outline italic terminal-text" id="encryption-label">ENCRYPTION: AES-256</div>
+                <div class="font-mono-data text-[10px] text-outline italic terminal-text" id="location-label">LOCATION: 30.7333° N, 76.7794° E</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+(function initContactPage() {
+
+    // ==========================
+    // Live Terminal Animation
+    // ==========================
+
+    const encryptionEl = document.getElementById("encryption-label");
+    const locationEl = document.getElementById("location-label");
+
+    const hexChars = "0123456789ABCDEF";
+
+    setInterval(() => {
+
+        if(encryptionEl){
+
+            let hex = "";
+
+            for(let i=0;i<4;i++){
+                hex += hexChars[Math.floor(Math.random()*16)];
+            }
+
+            encryptionEl.innerText =
+                `ENCRYPTION: AES-256 [0x${hex}]`;
+        }
+
+        if(locationEl){
+
+            const lat = (30.7333 + (Math.random()-0.5)*0.0001).toFixed(4);
+            const lng = (76.7794 + (Math.random()-0.5)*0.0001).toFixed(4);
+
+            locationEl.innerText =
+                `LOCATION: ${lat}° N, ${lng}° E`;
+        }
+
+    },100);
+
+    // ==========================
+    // Contact Form
+    // ==========================
+
+    const form = document.getElementById("contact-form");
+
+    if(!form) return;
+
+    form.addEventListener("submit",function(e){
+
+        e.preventDefault();
+
+        const name =
+            form.querySelector('input[type="text"]').value.trim();
+
+        const email =
+            form.querySelector('input[type="email"]').value.trim();
+
+        const phone =
+            form.querySelector('input[type="tel"]').value.trim();
+
+        const budgetField =
+            form.querySelector('select, input[name="budget"]');
+
+        const budget = budgetField ? budgetField.value : "Not Mentioned";
+
+        const project =
+            form.querySelector("textarea").value.trim();
+
+        const button =
+            form.querySelector("button[type='submit']");
+
+        const originalHTML = button.innerHTML;
+
+        button.disabled = true;
+
+        button.innerHTML = `
+            <span class="material-symbols-outlined animate-spin">
+                refresh
+            </span>
+            CONNECTING...
+        `;
+
+        // ==========================
+        // WhatsApp Message
+        // ==========================
+
+        const message = `🚀 *New Portfolio Inquiry*
+
+👤 *Name*
+${name}
+
+📧 *Email*
+${email}
+
+📱 *Phone*
+${phone}
+
+💰 *Budget*
+${budget}
+
+📝 *Project Brief*
+${project}
+
+🌐 *Sent From*
+${window.location.origin}`;
+
+        const phoneNumber = "917009842667";
+
+        const whatsappURL =
+            `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        setTimeout(()=>{
+
+            button.innerHTML = `
+                <span class="material-symbols-outlined">
+                    check_circle
+                </span>
+                REDIRECTING...
+            `;
+
+            button.classList.remove("bg-secondary-fixed");
+            button.classList.add("bg-white","text-black");
+
+            window.open(whatsappURL,"_blank");
+
+            setTimeout(()=>{
+
+                button.innerHTML = originalHTML;
+
+                button.classList.remove("bg-white","text-black");
+                button.classList.add("bg-secondary-fixed");
+
+                button.disabled = false;
+
+                form.reset();
+
+            },1500);
+
+        },800);
+
+    });
+
+})();
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title><%= title %></title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS (loaded via CDN as designed) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#20201f",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary-fixed-dim": "#ebb2ff",
+                        "background": "#131313",
+                        "on-secondary": "#283500",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-tint": "#c6c6c6",
+                        "tertiary": "#ebb2ff",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-primary-container": "#757575",
+                        "surface-bright": "#393939",
+                        "on-secondary-container": "#556d00",
+                        "on-secondary-fixed-variant": "#3c4d00",
+                        "surface-dim": "#131313",
+                        "outline": "#988e90",
+                        "primary-fixed": "#e2e2e2",
+                        "secondary-container": "#c3f400",
+                        "surface-container-highest": "#353535",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#74009f",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-variant": "#353535",
+                        "on-tertiary": "#520072",
+                        "on-primary-fixed-variant": "#474747",
+                        "secondary-fixed": "#c3f400",
+                        "inverse-primary": "#5e5e5e",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-surface-variant": "#cfc4c5",
+                        "on-secondary-fixed": "#161e00",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#f8d8ff",
+                        "secondary": "#ffffff",
+                        "on-tertiary-fixed": "#320047",
+                        "on-background": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-container": "#ba0dfc",
+                        "primary": "#c6c6c6",
+                        "inverse-on-surface": "#313030",
+                        "surface": "#131313",
+                        "on-primary": "#303030",
+                        "tertiary-container": "#000000",
+                        "secondary-fixed-dim": "#abd600"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Space Grotesk"],
+                        "label-caps": ["Space Mono"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "mono-data": ["Space Mono"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "mono-data": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Custom Style Overrides -->
+    <link href="/css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed font-body-md technical-grid min-h-screen flex flex-col">
+    <!-- WebGL shader background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <%- include('partials/header') %>
+
+    <!-- Sidebar Navigation -->
+    <%- include('partials/sidebar') %>
+
+    <!-- Main Content Area -->
+    <div class="flex-grow pt-24 md:ml-20 flex flex-col justify-between">
+        <main class="w-full flex-grow">
+            <%- body %>
+        </main>
+        
+        <!-- Footer -->
+        <%- include('partials/footer') %>
+    </div>
+
+    <!-- Mobile Bottom Navigation (Visible only on mobile viewport) -->
+    <nav class="md:hidden fixed bottom-0 w-full bg-surface-container-lowest/80 backdrop-blur-xl border-t border-outline-variant/20 flex justify-around py-4 z-50">
+        <a class="flex flex-col items-center gap-1 <%= path === '/' ? 'text-secondary-fixed font-bold' : 'text-outline hover:text-secondary' %>" href="/">
+            <span class="material-symbols-outlined" style="<%= path === '/' ? "font-variation-settings: 'FILL' 1;" : '' %>">home</span>
+            <span class="font-mono-data text-[10px]">Home</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 <%= path === '/work' ? 'text-secondary-fixed font-bold' : 'text-outline hover:text-secondary' %>" href="/work">
+            <span class="material-symbols-outlined" style="<%= path === '/work' ? "font-variation-settings: 'FILL' 1;" : '' %>">grid_view</span>
+            <span class="font-mono-data text-[10px]">Gallery</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 <%= path === '/expertise' ? 'text-secondary-fixed font-bold' : 'text-outline hover:text-secondary' %>" href="/expertise">
+            <span class="material-symbols-outlined" style="<%= path === '/expertise' ? "font-variation-settings: 'FILL' 1;" : '' %>">architecture</span>
+            <span class="font-mono-data text-[10px]">Tools</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 <%= path === '/contact' ? 'text-secondary-fixed font-bold' : 'text-outline hover:text-secondary' %>" href="/contact">
+            <span class="material-symbols-outlined" style="<%= path === '/contact' ? "font-variation-settings: 'FILL' 1;" : '' %>">mail</span>
+            <span class="font-mono-data text-[10px]">Contact</span>
+        </a>
+    </nav>
+
+    <!-- Shader background logic -->
+    <script src="/js/shader.js"></script>
+</body>
+</html>

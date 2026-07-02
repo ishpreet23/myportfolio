@@ -1,0 +1,345 @@
+<div class="pt-12 min-h-screen">
+    <!-- Hero Section / Filtering -->
+    <section class="px-6 md:px-margin-desktop mb-12">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
+            <div class="max-w-2xl">
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight uppercase">Selected<br/><span class="text-secondary-container">Narratives.</span></h1>
+                <p class="font-body-lg text-outline mt-4 max-w-md">Engineering visual impact through technical precision and editorial finesse. Explore the intersections of motion, video, and graphic architecture.</p>
+            </div>
+            <!-- Interactive Filters 
+            <div class="flex flex-wrap gap-2" id="filter-wrapper">
+                <button class="px-6 py-2 glass-filter-btn border border-secondary-container/50 text-secondary-container font-mono-data text-mono-data rounded-full flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all active-filter">
+                    ALL_PROJECTS
+                </button>
+                <button class="px-6 py-2 glass-filter-btn border border-outline-variant/30 text-outline hover:border-secondary hover:text-secondary transition-all font-mono-data text-mono-data rounded-full">
+                    MOTION
+                </button>
+                <button class="px-6 py-2 glass-filter-btn border border-outline-variant/30 text-outline hover:border-secondary hover:text-secondary transition-all font-mono-data text-mono-data rounded-full">
+                    DESIGN
+                </button>
+                <button class="px-6 py-2 glass-filter-btn border border-outline-variant/30 text-outline hover:border-secondary hover:text-secondary transition-all font-mono-data text-mono-data rounded-full">
+                    VIDEO
+                </button>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Work Gallery Grid -->
+    <section class="px-6 md:px-margin-desktop pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="gallery-grid">
+            <!-- Project 1: Large Bento (Motion) -->
+            <div data-category="motion" class="project-card stagger-1 md:col-span-8 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-video md:aspect-[16/9]">
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:grayscale-0" alt="Neural Network 3D render" src="images/ChatGPT Image May 17, 2026, 07_09_42 PM.png"/>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8 overlay-info opacity-0 translate-y-4 transition-all duration-500">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <span class="font-mono-data text-label-caps text-secondary-container px-2 py-1 bg-secondary-container/20 border border-secondary-container/40 rounded mb-4 inline-block">THUMBNAIL ARCHITECTURE</span>
+                            <h3 class="font-display-lg text-headline-lg uppercase text-secondary">YOUTUBE THUMBNAIL DESIGN</h3>
+                        </div>
+                        <a class="w-16 h-16 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-background transition-all group/btn" href="/contact">
+                            <span class="material-symbols-outlined text-3xl group-hover/btn:rotate-45 transition-transform">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute top-4 right-4 flex flex-col gap-2 items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="px-3 py-1 bg-background/80 backdrop-blur-md border border-outline-variant text-mono-data text-xs text-secondary-container">FPS: 60.00</div>
+                    <div class="px-3 py-1 bg-background/80 backdrop-blur-md border border-outline-variant text-mono-data text-xs text-outline">BITRATE: 45MBPS</div>
+                </div>
+            </div>
+
+            <!-- Project 2: Side Bento (Design) -->
+            <div data-category="design" class="project-card stagger-2 md:col-span-4 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-square md:aspect-auto">
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:grayscale-0" alt="Monolith Typeface styling" src="images/predator.png"/>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-6 overlay-info opacity-0 translate-y-4 transition-all duration-500">
+                    <span class="font-mono-data text-label-caps text-tertiary px-2 py-1 bg-tertiary/20 border border-tertiary/40 rounded mb-2 w-fit">GRAPHIC SYSTEM</span>
+                    <h3 class="font-display-lg text-headline-sm uppercase text-secondary">PREDATOR DRINK</h3>
+                </div>
+            </div>
+
+            <!-- Project 3: Vertical Bento (Video) -->
+            <div data-category="video" class="project-card stagger-3 md:col-span-4 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-[3/4]">
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <!-- <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:grayscale-0" alt="Brutalist concrete skyscraper cinematic layout" src="images/Make Everything Epic.mp4"/>-->
+                     <div class="absolute inset-0 z-0 overflow-hidden">
+
+    <video
+        class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:grayscale-0"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="/images/Make Everything Epic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+                </div>
+                <div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors"></div>
+
+               <!-- play arror code on hover <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div class="p-8 border border-secondary-container/50 bg-background/40 backdrop-blur-xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-500">
+                        <span class="material-symbols-outlined text-5xl text-secondary-container" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </div>
+                </div>-->
+
+                <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-background to-transparent pointer-events-none">
+                    <h3 class="font-display-lg text-headline-sm text-secondary">MOTION VIDEO</h3>
+                    <p class="font-mono-data text-xs text-outline uppercase tracking-widest mt-1">Video Direction &amp; Edit</p>
+                </div>
+            </div>
+
+            <!-- Project 4: Wide Bento (Motion) -->
+            <div data-category="motion" class="project-card stagger-4 md:col-span-8 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-video">
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:grayscale-0" alt="Circuitry-based android render still" src="images/Bike-repair-website.jpg"/>
+                </div>
+                <div class="absolute inset-0 flex flex-col justify-between p-8">
+                    <div class="flex justify-between items-start">
+                        <div class="p-4 border-l-2 border-secondary-container bg-secondary-container/5 backdrop-blur-sm">
+                            <p class="font-mono-data text-xs text-secondary-container">STATUS: COMPLETED</p>
+                            <p class="font-mono-data text-xs text-outline">CLIENT: UNKNOWN CLIENT</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                            <span class="w-2 h-2 rounded-full bg-secondary-container/30"></span>
+                            <span class="w-2 h-2 rounded-full bg-secondary-container/30"></span>
+                        </div>
+                    </div>
+                    <div class="overlay-info opacity-0 translate-y-4 transition-all duration-500">
+                        <h3 class="font-display-lg text-headline-lg text-secondary">WEBSITE LANDING PAGE</h3>
+                        <div class="flex gap-4 mt-4">
+                            <a  class="bg-secondary text-background px-6 py-2 font-mono-data font-bold hover:bg-secondary-container transition-colors inline-block">CONTACT ME FOR → </a>
+                            <a href="/contact" class="border border-secondary text-secondary px-6 py-2 font-mono-data hover:bg-white/10 transition-colors inline-block">WEBSITE UI DESIGN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- ========================= -->
+<!-- Project 5 : Large -->
+<!-- ========================= -->
+<div data-category="design"
+    class="project-card stagger-5 md:col-span-8 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-video">
+
+    <div class="absolute inset-0 overflow-hidden">
+        <img
+            src="images/New Project (2).jpg"
+            class="w-full h-full object-contain p-4 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+            alt="">
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+
+    <div class="absolute bottom-0 left-0 p-8 opacity-0 group-hover:opacity-100 transition-all duration-500">
+        <span class="font-mono-data text-label-caps text-secondary-container px-2 py-1 bg-secondary-container/20 border border-secondary-container/40 rounded mb-3 inline-block">
+            GRAPHIC DESIGN
+        </span>
+
+        <h3 class="font-display-lg text-headline-lg text-secondary uppercase">
+            CREATIVE CAMPAIGN
+        </h3>
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Project 6 : Small -->
+<!-- ========================= -->
+<div data-category="design"
+    class="project-card stagger-6 md:col-span-4 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-square">
+
+    <div class="absolute inset-0 overflow-hidden">
+
+        <img
+            src="images/New Project (4).jpg"
+            class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+            alt="">
+
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
+
+    <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-all duration-500">
+
+        <span class="font-mono-data text-label-caps text-tertiary px-2 py-1 bg-tertiary/20 border border-tertiary/40 rounded mb-2 inline-block">
+            BRANDING
+        </span>
+
+        <h3 class="font-display-lg text-headline-sm text-secondary uppercase">
+            VISUAL IDENTITY
+        </h3>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Project 7 : Small Video -->
+<!-- ========================= -->
+<div data-category="video"
+    class="project-card stagger-7 md:col-span-4 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-[3/4]">
+
+    <div class="absolute inset-0 overflow-hidden">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+
+            <source src="images/Final November Reel.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+
+    <div class="absolute bottom-0 left-0 p-6">
+
+        <h3 class="font-display-lg text-headline-sm text-secondary uppercase">
+            SHOWREEL
+        </h3>
+
+        <p class="font-mono-data text-xs text-outline uppercase tracking-widest">
+            Motion Graphics
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Project 8 : Large -->
+<!-- ========================= -->
+<div data-category="motion"
+    class="project-card stagger-8 md:col-span-8 group relative overflow-hidden glass-panel rounded-xl border border-outline-variant/30 aspect-video">
+
+    <div class="absolute inset-0 overflow-hidden">
+
+        <img
+            src="images/New Project (7).jpg"
+            class="w-full h-full object-contain p-4 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+            alt="">
+
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-between p-8">
+
+        <div class="flex justify-between">
+
+            <div class="p-4 border-l-2 border-secondary-container bg-secondary-container/10 backdrop-blur-sm">
+
+                <p class="font-mono-data text-xs text-secondary-container">
+                    STATUS : COMPLETED
+                </p>
+
+                <p class="font-mono-data text-xs text-outline">
+                    CLIENT : PRIVATE
+                </p>
+
+            </div>
+
+            <div class="flex gap-2">
+
+                <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                <span class="w-2 h-2 rounded-full bg-secondary-container/30"></span>
+                <span class="w-2 h-2 rounded-full bg-secondary-container/30"></span>
+
+            </div>
+
+        </div>
+
+        <div class="opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+
+            <h3 class="font-display-lg text-headline-lg text-secondary uppercase">
+                DIGITAL EXPERIENCE
+            </h3>
+
+            <div class="flex gap-4 mt-4">
+
+                <a href="/contact"
+                    class="bg-secondary text-background px-6 py-2 font-mono-data font-bold hover:bg-secondary-container transition-colors">
+                    VIEW PROJECT
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="px-6 md:px-margin-desktop py-24 border-t border-outline-variant/20 relative overflow-hidden">
+        <div class="relative z-10 text-center max-w-3xl mx-auto">
+            <p class="font-mono-data text-label-caps text-outline mb-6">AVAILABLE FOR NEW VENTURES — Q4 2024</p>
+            <h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg uppercase mb-12">Let's build something <span class="text-secondary-container">legendary.</span></h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a class="group flex items-center justify-between gap-8 bg-secondary-container text-on-secondary-container px-8 py-6 rounded-lg font-display-lg text-headline-sm transition-all hover:scale-[1.02] active:scale-95" href="/contact">
+                    SEND AN INQUIRY
+                    <span class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Interactive filtering JS -->
+<script>
+    (function initGalleryFilter() {
+        const buttons = document.querySelectorAll('#filter-wrapper button');
+        const cards = document.querySelectorAll('#gallery-grid .project-card');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Deactivate all buttons
+                buttons.forEach(b => {
+                    b.classList.remove('border-secondary-container/50', 'text-secondary-container');
+                    b.classList.add('border-outline-variant/30', 'text-outline');
+                });
+
+                // Activate current button
+                btn.classList.remove('border-outline-variant/30', 'text-outline');
+                btn.classList.add('border-secondary-container/50', 'text-secondary-container');
+
+                const filterValue = btn.textContent.trim().toLowerCase();
+
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category').toLowerCase();
+                    if (filterValue === 'all_projects' || cardCategory === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    })();
+</script>
