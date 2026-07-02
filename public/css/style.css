@@ -245,24 +245,26 @@ body {
    Mobile Only - Show Portfolio in Color
    ========================================== */
 
-@media (max-width: 768px) {
+/* ==========================================
+   MOBILE ONLY
+========================================== */
 
-    /* Images */
-    .project-card img{
-        filter: grayscale(0) !important;
-        transform: none !important;
-    }
+@media (hover: none), (max-width:768px){
 
-    /* Videos */
+    .project-card img,
     .project-card video{
-        filter: grayscale(0) !important;
-        transform: none !important;
+        -webkit-filter:none !important;
+        filter:none !important;
     }
 
-    /* Keep overlays visible */
-    .project-card .overlay-info{
-        opacity:1 !important;
-        transform:translateY(0) !important;
+    .project-card .grayscale{
+        -webkit-filter:none !important;
+        filter:none !important;
+    }
+
+    .project-card .group-hover\:grayscale-0{
+        -webkit-filter:none !important;
+        filter:none !important;
     }
 
 }
