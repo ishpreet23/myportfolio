@@ -240,3 +240,29 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+/* ==========================================
+   Mobile Only - Show Portfolio in Color
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* Images */
+    .project-card img{
+        filter: grayscale(0) !important;
+        transform: none !important;
+    }
+
+    /* Videos */
+    .project-card video{
+        filter: grayscale(0) !important;
+        transform: none !important;
+    }
+
+    /* Keep overlays visible */
+    .project-card .overlay-info{
+        opacity:1 !important;
+        transform:translateY(0) !important;
+    }
+
+}
