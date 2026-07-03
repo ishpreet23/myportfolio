@@ -40,6 +40,7 @@
 
     <nav class="flex flex-col gap-6 px-4 py-8 flex-1">
 
+        <!-- Gallery -->
         <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/work' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
             href="/work">
 
@@ -54,6 +55,25 @@
 
         </a>
 
+        <!-- ========================= -->
+        <!-- NEW WEBSITE BUTTON -->
+        <!-- ========================= -->
+
+        <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/website' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
+            href="/website">
+
+            <span class="material-symbols-outlined"
+                style="<%= path === '/website' ? "font-variation-settings:'FILL' 1;" : "" %>">
+                public
+            </span>
+
+            <span class="font-mono-data opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                View Case Study
+            </span>
+
+        </a>
+
+        <!-- Tools -->
         <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/expertise' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
             href="/expertise">
 
@@ -68,6 +88,7 @@
 
         </a>
 
+        <!-- Timeline -->
         <a class="flex items-center gap-4 p-3 rounded-lg text-outline hover:text-secondary hover:translate-x-1 transition-all"
             href="/#timeline">
 
@@ -81,6 +102,7 @@
 
         </a>
 
+        <!-- Contact -->
         <a class="flex items-center gap-4 p-3 rounded-lg <%= path === '/contact' ? 'bg-secondary text-on-secondary' : 'text-outline hover:text-secondary hover:translate-x-1' %> transition-all"
             href="/contact">
 
